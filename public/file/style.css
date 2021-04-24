@@ -1,0 +1,65 @@
+
+body{
+    background-image: url('eye.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position:unset;
+    margin:0px;
+    padding:0px;
+}
+
+.container h1{
+    color: #ff7777d4;
+    font-size: 40px;
+    font-variant: small-caps;
+}
+.container{
+    background-color: rgba(7,7,7, 0.65);
+    text-align: center;
+    min-width:400px;
+    max-width:490px;
+    height:auto;
+    padding:44px 50px 30px 50px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin:60px auto;   
+}
+
+
+ .detail input{
+    text-align:center;
+    padding:9px 50px;
+    border-radius:5px;
+    font-size:15px;
+    border:2px solid black;
+    border-radius: 5px;
+    display:block;
+    width:290px;
+}
+ .detail input:focus-within{
+    background-color: rgba(199, 199, 199, 0.65);
+}
+
+form .gender{
+    color:white;
+    font-size:18px;
+}
+
+.gender div{
+    margin: 0px 45px;
+    display:inline;
+}
+
+.btn{
+    width:100px;
+    color:white;
+    border:2px solid black;
+    margin: 0 25px;
+    padding:10px;
+    background-color:#325e85;
+    font-size:15px;
+    font-weight:bold;
+    border-radius:9px;
+    box-shadow:2px 2px 5px black;
+    
+}

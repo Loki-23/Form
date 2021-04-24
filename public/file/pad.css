@@ -1,0 +1,33 @@
+.container{
+    min-width: 359px;
+    max-width: 466px;
+    margin: 100px auto;
+    padding: 53px 27px 30px 53px;
+    height: auto;
+}
+
+form div{
+    padding:10px 0px;
+}
+
+.detail input{
+    padding: 12px 5px;
+    width: 354px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.gender div{
+    margin: 0px 45px;
+    display:block;
+}
+.br{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn{
+    width:100px;
+    margin: 7px 25px;
+    padding:10px;
+}

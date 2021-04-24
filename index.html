@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="file/style.css">
+    <link href="file/phone.css" rel="stylesheet" media="screen and (max-width:700px)">
+    <link href="file/pad.css" rel="stylesheet" media="screen and (min-width:700px) and (max-width:1100px)">
+    <title>Form</title>
+    
+</head>
+
+<body>
+    <div class="container">
+       
+        <form action="/" method="post" name="myform" onsubmit="return validation()" id ="frm">
+            <div class="detail">
+                <input type="text" name="name" placeholder="Enter your Name" autocomplete="off" required >
+            </div>
+            <br>
+            <div class="detail">
+                <input type="text" name="enroll" placeholder="Enter your Enrollment Number" autocomplete="off" required>
+            </div>
+            <br>
+            <div class="detail">
+                <input type="email" name="myemail" placeholder="Enter your IITR Email"  autocomplete="off" required>
+            </div>
+            <br>
+            <div class="detail">
+                <input type="text" name="mybranch" placeholder="Enter your Branch" autocomplete="off" required>
+            </div>
+            <br>
+            <div class="detail">
+                <input type="tel" name="mynumber" placeholder="Enter your Contact Number" autocomplete="off" required>
+            </div>
+            <br>
+            <div class="gender">
+                <div>
+                <input type="radio" name="mygender" value="male"> Male
+                </div> 
+                <div>  
+                <input type="radio" name="mygender" value="female"> Female
+                </div>
+           </div>
+           <br>
+           <div class="br">
+           <button class="btn" >Submit</button>
+           <input type="reset" class="btn">
+           </div> 
+        </form>
+    </div>
+
+    <script>
+        function validation() { 
+        var name = document.forms["myform"]["name"]; 
+        var email = document.forms["myform"]["enroll"]; 
+        var phone = document.forms["myform"]["myemail"]; 
+        var what = document.forms["myform"]["mybranch"]; 
+        var password = document.forms["myform"]["mygender"]; 
+        var address = document.forms["myform"]["mynumber"]; 
+  
+        if (name.value == "") { 
+            window.alert("Please enter your name.");  
+            return false; 
+        } 
+  
+        if (enroll.value == "") { 
+            window.alert("Please enter your enrollment number");  
+            return false; 
+        } 
+  
+        if (myemail.value == "") { 
+            window.alert("Please enter a valid e-mail address."); 
+            return false; 
+        } 
+  
+        if (mybranch.value == "") { 
+            window.alert("Please enter your branch.");  
+            return false; 
+        } 
+  
+        if (mynumber.value == "") { 
+            window.alert("Please enter your contact number");  
+            return false; 
+        } 
+        if (mygender.value == "") { 
+            window.alert("Please enter your gender"); 
+            return false; 
+        } 
+  
+        
+        return true; 
+    }  
+    </script>
+    
+</body>
+
+</html>
